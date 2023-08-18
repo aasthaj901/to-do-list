@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Helvetica' , sans-serif;
+    box-sizing: border-box; 
+   
+} 
+.container h3{
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 0; 
+    font-family: 'Garamond' , sans-serif;
+    box-sizing: border-box;
+}
+.container{ 
+    
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ADD8E6,#9477c2);
+    color: #0e0d0d;
+    padding-top: 8;
+    } 
+.container h1{ 
+    padding-top: 30px;
+    display:flex;
+    align-items: centre;
+    font-size: 35px;
+    font-weight:600;
+} 
+.container h1 img{ 
+    margin-right: 40px;
+    margin-left: 30px;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+    width: 60px; 
+    outline: #0e0d53;
+    border: radius 25px;
+} 
+.container button img{ 
+     
+    width: 35px;
+   
+    margin-right:40px;
+    
+}  
+
+  
+.container button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(33, 20, 83, 0.808);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+.container button{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 20%;
+    margin-left: 30px;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(86, 165, 235, 0.25);
+    background-color: white;
+    
+}  
+.container button prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #56a5eb;
+    color: white;
+  }
+  
+ 
+.input-box h2 img{ 
+    width: 25px;
+    position: absolute;
+    bottom: 5px;
+    right: 30px;
+    cursor: pointer;
+} 
+.input-box{
+    
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    min-height: 100px;
+    background: #fff;
+    color: #333;
+    padding: 30px;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-top: 30px;
+      outline: 20px;
+    border-radius: 5px;
+} 
+.input-box img{
+    width: 25px;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    cursor: pointer;
+}  
+
+.input-box::before{
+content: '';
+position:absolute;
+height: 28px;
+width: 28px;
+border-radius: 50px;
+background-image: url(images/incomplete.png);
+background-size: cover;
+background-position: center;
+top: 12px;
+left: 9px;
+
+} 
+.input-box.checked{
+    color:#555;
+    text-decoration: line-through;
+} 
+.input-box.checked::before{
+  background-image: url(images/tick.png);  
+}
+
+
+  #progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.5rem; 
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #progressBarFull {
+    height: 3.5rem;
+    background-color: #56a5eb;
+    width: 0%;
+  }
